@@ -1,4 +1,4 @@
-function reverseVowels(s: string): string {
+function reverseVowels_ts(s: string): string {
   const vowelArr: string[] = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', "U"];
   let temp: string[] = s.split('');
   let sArr: string[] = [...temp];
