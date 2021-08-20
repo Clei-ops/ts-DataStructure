@@ -20,6 +20,7 @@ var findMedianSortedArrays = function (nums1, nums2) {
   }
   return result;
 };
+//选择排序
 var sort = function (num) {
   for (let i = 0; i < num.length - 1; i++) {
     for (let j = i + 1; j < num.length; j++) {
@@ -32,3 +33,32 @@ var sort = function (num) {
   }
   return num;
 };
+//冒泡排序
+var sort = function (num) {
+  for (let i = 0; i < num.length; i++) {
+      for (let j = 0; j < num.length - i - 1; j++) {
+          if (num[j] > num[j + 1]) {
+              var temp = num[j];
+              num[j] = num[j + 1];
+              num[j + 1] = temp;
+          }
+      }
+  }
+  return num;
+};
+// 插入排序
+var sort = function (num) {
+  for (let i = 1; i < num.length; i++) {
+      var value = num[i];
+      let j = i - 1
+      for (; j >= 0; j--) {
+          if (num[j] > value) {
+              num[j + 1] = num[j];
+          } else {
+              break;
+          }
+      }
+      num[j + 1] = value;
+  }
+  return num;
+}
