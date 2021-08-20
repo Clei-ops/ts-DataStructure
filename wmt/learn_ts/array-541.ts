@@ -1,4 +1,4 @@
-function reverseStr(s: string, k: number): string {
+function reverseStr_wmt(s: string, k: number): string {
   if(s.length <= 2 * k) {
       return reverseStrLessToK(s, k);
   }
